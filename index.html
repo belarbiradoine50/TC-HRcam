@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TC-HR CAM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>مرحبًا بك في TC-HR CAM</h1>
+    <div id="auth-section">
+      <input type="email" id="email" placeholder="البريد الإلكتروني">
+      <input type="password" id="password" placeholder="كلمة السر">
+      <button id="signUpBtn">تسجيل جديد</button>
+      <button id="signInBtn">تسجيل الدخول</button>
+      <p id="authMessage"></p>
+    </div>
+    <div id="dashboard" style="display: none;">
+      <h2>لوحة التحكم</h2>
+      <video id="videoStream" autoplay></video>
+      <button id="startRecording">بدء التسجيل</button>
+      <button id="stopRecording" disabled>إيقاف التسجيل</button>
+      <p id="notification"></p>
+    </div>
+  </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<div id="recordingsSection" style="display: none;">
+  <h2>سجل التسجيلات</h2>
+  <ul id="recordingsList"></ul>
+</div>
+<div id="loading">جاري تحميل البث المباشر...</div>
+<div class="navbar">
+  <a href="#home">الرئيسية</a>
+  <a href="#settings">الإعدادات</a>
+</div>
+<footer class="footer">
+   <p>&copy; 2024 BLR Company. All rights reserved.</p>
+</footer>
+<!-- زر تشغيل الكاميرا التجريبي -->
+<div id="auth-section">
+    <button onclick="startDemoStream()">تجربة الكاميرا بدون تسجيل</button>
+</div>

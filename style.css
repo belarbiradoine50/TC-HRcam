@@ -1,0 +1,289 @@
+/* تحسين تصميم زر التسجيل */
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* تنسيق الرسائل */
+#authMessage, #notification {
+  color: #555;
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* تصميم واجهة السجل */
+#recordingsSection {
+  margin-top: 20px;
+}
+
+#recordingsList {
+  list-style: none;
+  padding: 0;
+}
+
+#recordingsList li {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+/* الألوان الأساسية */
+:root {
+  --main-green: #006233; /* اللون الأخضر */
+  --main-white: #ffffff; /* اللون الأبيض */
+  --main-red: #d52b1e; /* اللون الأحمر */
+}
+
+/* خلفية التطبيق بالكامل */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--main-white); /* اللون الأبيض لخلفية الصفحة */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* العنوان الرئيسي */
+h1 {
+  color: var(--main-green);
+  background-color: var(--main-white);
+  padding: 15px;
+  border-bottom: 3px solid var(--main-red);
+  margin-bottom: 20px;
+}
+
+/* تصميم الأقسام */
+#auth-section, #dashboard, #recordingsSection {
+  background-color: var(--main-green);
+  color: var(--main-white);
+  border: 2px solid var(--main-red);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* تصميم الأزرار */
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--main-red);
+  color: var(--main-white);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a52218; /* لون أغمق من الأحمر عند التمرير */
+}
+
+/* تصميم الرسائل */
+#authMessage, #notification {
+  color: var(--main-white);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* تصميم سجل التسجيلات */
+#recordingsList {
+  list-style: none;
+  padding: 0;
+}
+
+#recordingsList li {
+  background-color: var(--main-white);
+  color: var(--main-green);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid var(--main-red);
+}
+
+/* تصميم إدخالات النص */
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--main-green);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* تصميم البث المباشر */
+#videoStream {
+  border: 3px solid var(--main-red);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 480px;
+  margin: 10px auto;
+}
+/* تدرجات للأزرار */
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(135deg, var(--main-red), #ff6347);
+  color: var(--main-white);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #a52218, #d43f2a);
+  transform: scale(1.05); /* تكبير الزر قليلاً عند التمرير */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* تصميم تأثير ضغط للزر */
+button:active {
+  transform: scale(0.95);
+}
+/* خلفية متدرجة للأقسام */
+#auth-section, #dashboard, #recordingsSection {
+  background: linear-gradient(135deg, var(--main-green) 70%, #008c4a);
+  color: var(--main-white);
+  border: 2px solid var(--main-red);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+/* تصميم العنوان */
+h1 {
+  color: var(--main-white);
+  background-color: var(--main-green);
+  padding: 15px;
+  border-bottom: 5px solid var(--main-red);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* تحسين تصميم النصوص */
+p, label {
+  font-size: 16px;
+  color: #333;
+}
+/* تنسيق حقول الإدخال */
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid var(--main-green);
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* تأثير التركيز على الحقول */
+input[type="email"]:focus, input[type="password"]:focus {
+  border-color: var(--main-red);
+  box-shadow: 0 0 5px rgba(213, 43, 30, 0.5);
+  outline: none;
+}
+/* تصميم سجل التسجيلات */
+#recordingsList {
+  list-style: none;
+  padding: 0;
+}
+
+#recordingsList li {
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  color: var(--main-green);
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid var(--main-red);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+#recordingsList li:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* تأثير تحميل */
+#loading {
+  display: none; /* يتم تفعيله عبر JavaScript عند بدء التحميل */
+  font-size: 18px;
+  color: var(--main-green);
+  margin-top: 20px;
+}
+
+#loading::after {
+  content: " ⏳";
+  animation: loading-animation 1s infinite;
+}
+
+/* تأثير دوران */
+@keyframes loading-animation {
+  0% { content: " ⏳"; }
+  50% { content: " ⏱"; }
+  100% { content: " ⏳"; }
+}
+/* تصميم شريط التنقل */
+.navbar {
+  background-color: var(--main-red);
+  color: var(--main-white);
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  color: var(--main-white);
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: var(--main-green);
+}
+/* تصميم تذييل الصفحة */
+.footer {
+   background-color: var(--main-green);
+   color: var(--main-white);
+   padding: 15px 0;
+   font-size: 14px;
+   text-align: center;
+   border-top: 2px solid var(--main-red);
+   margin-top: 20px;
+   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+   margin: 0;
+   font-weight: bold;
+}
+/* إخفاء واجهة البث المباشر افتراضيًا */
+#dashboard {
+    display: none;
+}
